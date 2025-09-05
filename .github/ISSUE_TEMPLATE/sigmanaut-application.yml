@@ -1,0 +1,109 @@
+name: Sigmanaut Application
+description: "Apply to become an Ergo Sigmanaut"
+title: "[Sigmanaut Application]: "
+labels: ["application", "sigmanaut"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: "Your full name"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ambassador_roles
+    attributes:
+      label: "What ambassador roles are you interested in?"
+      options:
+        - label: "Moderator"
+        - label: "Creator"
+        - label: "Translator"
+        - label: "Embassy"
+        - label: "Marketing"
+        - label: "Writer"
+
+  - type: dropdown
+    id: dedicate
+    attributes:
+      label: "How much time can you dedicate to Ergo?"
+      description: "1 = Infrequently when available, 10 = Full time if worthwhile"
+      options:
+        - "0"
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+        - "7"
+        - "8"
+        - "9"
+        - "10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: aboutme
+    attributes:
+      label: "About me"
+      placeholder: "Tell us about your engagement in the ecosystem, groups, etc."
+      render: markdown
+
+  - type: input
+    id: professional
+    attributes:
+      label: "Experience"
+      placeholder: "Any relevant professional experience?"
+
+  - type: input
+    id: time
+    attributes:
+      label: "Availability (UTC)"
+      placeholder: "What time are you usually available (UTC format)?"
+
+  - type: input
+    id: address
+    attributes:
+      label: "Ergo address"
+      placeholder: "Your ERG address (for rewards, payments)"
+
+  - type: textarea
+    id: improve
+    attributes:
+      label: "How to improve Ergo"
+      placeholder: "If you could improve one thing about Ergo today, what would it be?"
+      render: markdown
+
+  - type: input
+    id: discord
+    attributes:
+      label: "Discord username"
+      description: "Please ensure you are a member of the Ergo Discord server: https://discord.com/invite/ergo-platform-668903786361651200"
+      placeholder: "Your Discord username"
+    validations:
+      required: true
+
+  - type: input
+    id: telegram
+    attributes:
+      label: "Telegram username"
+      placeholder: "Your Telegram username"
+
+  - type: input
+    id: twitter
+    attributes:
+      label: "Twitter handle"
+      placeholder: "Your Twitter handle"
+
+  - type: input
+    id: reddit
+    attributes:
+      label: "Reddit username"
+      placeholder: "Your Reddit username"
+
+  - type: input
+    id: email
+    attributes:
+      label: "Email address"
+      placeholder: "What email can we reach you at?"
